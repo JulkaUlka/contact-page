@@ -1,31 +1,33 @@
-body {
-  text-align: center;
-  margin: 60px auto;
-  max-width: 800px;
-}
 :root {
   --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
+.welcome {
+  margin-top: 60px;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
 h2 {
-  font-size: 48px;
+  font-size: 48px !important;
   margin: 0;
 }
 h1 {
-  font-size: 96px;
+  font-size: 96px !important;
   font-weight: bold;
   margin: 0;
 }
 h3 {
-  font-size: 24px;
+  font-size: 24px !important;
   opacity: 0.7;
   margin: 0;
 }
 .buttons {
   display: flex;
   margin-top: 40px;
+  margin-bottom: 40px;
   justify-content: center;
 }
 .buttons a {
@@ -35,9 +37,9 @@ h3 {
   text-decoration: none;
 }
 .contact {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
+  background: var(--primary-color) !important;
+  box-shadow: var(--box-shadow) !important;
+  color: white !important;
 }
 .about {
   color: var(--primary-color);
@@ -50,10 +52,10 @@ h3 {
 .paragrahps {
   display: flex;
   margin: 30px 0;
+  text-align: center;
 }
 
 p {
-  background: var(--secondary-color);
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
