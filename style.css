@@ -69,3 +69,15 @@ p {
   font-size: 28px;
   text-decoration: none;
 }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 34px;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
