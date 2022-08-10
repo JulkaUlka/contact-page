@@ -69,15 +69,21 @@ p {
   font-size: 28px;
   text-decoration: none;
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   h1 {
-    font-size: 34px;
+    font-size: 34px !important;
   }
   h2 {
-    font-size: 20px;
+    font-size: 20px !important;
     text-align: center;
   }
   p {
     text-align: center;
+  }
+  .link {
+    display: block !important;
+  }
+  #nextImage {
+    width: 366px !important;
   }
 }
