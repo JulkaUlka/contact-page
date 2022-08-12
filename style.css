@@ -10,6 +10,12 @@ h3 {
   color: white;
   text-align: center;
 }
+h1 {
+  font-family: "Raleway", sans-serif;
+}
+h3 {
+  font-family: "Barlow", sans-serif;
+}
 .main {
   position: block;
   background-color: #1f1f21;
@@ -33,10 +39,14 @@ h3 {
   opacity: 90%;
 }
 
-.contact {
-  background: var(--primary-color) !important;
-
+.link {
+  border: 1px solid var(--primary-color) !important;
   color: white !important;
+}
+.link:hover {
+  background-color: #dd00ae !important;
+  transition: all 200ms linear;
+  transform: rotate(360deg);
 }
 .email-link {
   display: flex;
@@ -45,18 +55,8 @@ h3 {
   font-size: 28px;
   text-decoration: none;
 }
-/* @media screen and (max-width: 576px) {
-  h1 {
-    font-size: 34px !important;
-  }
-  h2 {
-    font-size: 20px !important;
-    text-align: center;
-  }
-  p {
-    text-align: center;
-  }
+@media screen and (max-width: 576px) {
   .link {
     display: block !important;
   }
-} */
+}
