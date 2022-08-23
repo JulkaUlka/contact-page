@@ -6,7 +6,9 @@ body {
   background-color: #1f1f21 !important;
 }
 h1,
-h2 {
+h2,
+h3,
+p {
   color: white;
   text-align: center;
 }
@@ -18,12 +20,20 @@ h2 {
   font-family: "Barlow", sans-serif;
   font-size: 20px !important;
 }
+p {
+  font-family: "Barlow", sans-serif;
+}
+.active-link {
+  color: #dd00ae !important;
+}
 .nav-link {
   font-family: "Barlow", sans-serif !important;
 }
+.nav-link:hover {
+  color: #dd00ae !important;
+}
 
 .main {
-  position: block;
   background-color: #1f1f21;
   width: 70% !important;
   margin-top: 100px;
@@ -32,11 +42,19 @@ h2 {
   box-shadow: 30px 21px var(--primary-color);
   padding: 20px;
 }
+.container {
+  width: 80% !important;
+  margin-top: 100px;
+}
 .avatar {
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 50%;
+  border: 3px solid var(--primary-color);
+}
+.photo {
+  box-shadow: 23px -22px var(--primary-color);
   border: 3px solid var(--primary-color);
 }
 #carouselExampleInterval {
@@ -60,6 +78,39 @@ h2 {
   font-size: 28px;
   text-decoration: none;
 }
+.sertificate {
+  margin: 20px !important;
+}
+.cards {
+  width: 500px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: minmax(100%, 1fr);
+  grid-template-areas: "stack";
+  overflow: hidden;
+}
+.cards > img,
+.cards > figcaption {
+  grid-area: stack;
+}
+.cards > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards > figcaption {
+  grid-area: stack;
+  background-color: var(--primary-color);
+  opacity: 95%;
+  transform: translateY(calc(100% - 4rem));
+  transition: transform 600ms;
+}
+.cards > figcaption > h3 {
+  height: 4rem;
+}
+.cards:hover figcaption {
+  transform: none;
+}
 footer .social-links a {
   margin: 60px 20px;
   background-color: var(--primary-color);
@@ -76,5 +127,9 @@ footer .social-links a:hover {
 @media screen and (max-width: 576px) {
   .link {
     display: block !important;
+  }
+  .photo {
+    border: 3px solid var(--primary-color);
+    box-shadow: none;
   }
 }
