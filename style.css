@@ -20,8 +20,14 @@ h2 {
   font-family: "Barlow", sans-serif;
   font-size: 20px !important;
 }
+h3 {
+  font-family: "Raleway", sans-serif;
+}
 p {
   font-family: "Barlow", sans-serif;
+}
+.navbar-icon {
+  background-color: var(--primary-color) !important;
 }
 .active-link {
   color: #dd00ae !important;
