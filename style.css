@@ -139,7 +139,7 @@ footer .social-links a:hover {
   color: white;
 }
 .social-links-button i {
-  margin: 30px 60px 70px;
+  margin: 30px 30px 60px;
   background-color: var(--primary-color);
   color: #1f1f21;
   padding: 6px 10px;
@@ -165,6 +165,6 @@ footer .social-links a:hover {
     box-shadow: none;
   }
   .social-links-button i {
-    margin: 10px 0;
+    margin: 20px 5px 30px;
   }
 }
