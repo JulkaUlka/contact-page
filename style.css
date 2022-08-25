@@ -175,6 +175,14 @@ footer .social-links a:hover {
   color: var(--primary-color);
   padding: 5px;
 }
+.zoom {
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
 
 @media screen and (max-width: 576px) {
   .link {
@@ -186,5 +194,13 @@ footer .social-links a:hover {
   }
   .social-links-button i {
     margin: 20px 5px 30px;
+  }
+  .container-about {
+    margin-top: 30px;
+  }
+  .sertificate h1 {
+    font-size: 30px !important;
+    margin: 0px;
+    padding: 0px !important;
   }
 }
