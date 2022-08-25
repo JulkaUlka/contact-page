@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt a cat</title>
+    <style>
+      body {
+        text-align: center;
+        background-image: linear-gradient(
+            rgba(241, 239, 239, 0.767),
+            rgba(241, 239, 239, 0.767)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/161/original/paws.JPG?1655923963");
+      }
+      p {
+        font-size: 17px;
+      }
+      .title {
+        border: 1px solid #000000;
+        background-color: white;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        width: 50%;
+        padding: 10px;
+        margin: 1px auto;
+        font-family: Snell Roundhand, cursive;
+      }
+      .image {
+        float: left;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid #000000;
+      }
+
+      .image img {
+        width: 100%;
+        height: auto;
+      }
+      a:-webkit-any-link {
+        color: #797979;
+      }
+
+      .reason {
+        list-style-type: none;
+        padding: 0px;
+        text-align: left;
+      }
+      h2 {
+        margin: 30px auto 10px;
+      }
+      li {
+        float: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: auto;
+        display: list-item;
+      }
+      li::before {
+        content: "😺 ";
+      }
+      li:hover {
+        background: linear-gradient(to top, #e9ec37 20%, #72afd3 80%);
+        border-radius: 5px;
+      }
+      button {
+        margin: 10px auto 20px;
+        border: 1px solid #000000;
+        background: linear-gradient(to top, #e9ec37 20%, #72afd3 80%);
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 100px;
+        transition: all 200ms ease;
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        color: #797979;
+        background: #f1f0f0;
+        cursor: pointer;
+        border: 1px solid black;
+      }
+      .signature {
+        margin: auto;
+        font-family: "Brush Script MT", cursive;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Hello, my name is Kiedis!</h1>
+      <div class="image">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/362/original/IMG_E0054.JPG?1656061532"
+          alt="Black cat"
+        />
+      </div>
+      <hr />
+      <p>
+        I am a british cat from Kyiv,Ukraine. I am the happiest cat on Earth
+        because I have my human parents. Unfortunately, during the
+        <strong>
+          <a href="https://www.bbc.com/news/world-60525350" target="_blank"
+            >war in Ukraine</a
+          ></strong
+        >, many of my brothers and sisters were left without a family. Let's
+        make cats happier together with you and <br />
+        <strong>become cats parents!</strong>
+      </p>
+      <hr />
+      <h2>Here are the top five reasons you should own a cat:</h2>
+      <ul class="reason">
+        <li>They'll Make You Smarter</li>
+        <li>They’re the Ideal Pet for Apartments</li>
+        <li>They Have Playful Moods</li>
+        <li>They’re Clearly the Most Intelligent House Pet</li>
+        <li>17 of 20 People Find Their Purrs Therapeutic</li>
+      </ul>
+
+      <button>Adopt a cat</button>
+      <p class="signature">Coded by Yuliia Hlushko</p>
+
+      <script>
+        function adoptCat() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          alert(
+            "Thank you, " + name + "! We will contact you as soon as posible!😻"
+          );
+        }
+        let Button = document.querySelector("button");
+        Button.addEventListener("click", adoptCat);
+      </script>
+    </div>
+  </body>
+</html>

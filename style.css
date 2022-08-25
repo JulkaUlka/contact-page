@@ -52,6 +52,10 @@ p {
   width: 80% !important;
   margin-top: 100px;
 }
+.container-works {
+  width: 80% !important;
+  margin-top: 100px;
+}
 .container-contact {
   width: 70% !important;
   margin-top: 100px;
@@ -104,6 +108,10 @@ p {
 .sertificate {
   margin: 20px !important;
 }
+.preview {
+  border: 3px solid var(--primary-color);
+}
+
 .cards {
   width: 500px;
   border-radius: 10px;
@@ -162,6 +170,10 @@ footer .social-links a:hover {
   margin: 100px 0 60px 0;
   padding: 10px;
   background-color: var(--primary-color);
+}
+.icon {
+  color: var(--primary-color);
+  padding: 5px;
 }
 
 @media screen and (max-width: 576px) {
